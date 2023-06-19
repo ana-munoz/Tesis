@@ -59,20 +59,59 @@ export default function initToolbar(graph, tbContainer) {
   var baseStyle = { ...graph.getStylesheet().getDefaultVertexStyle() };
 
   addVertex(
-    "images/rectangle.gif",
+    "images/actor.gif",
     100,
-    40,
+    100,
     getStyleStringByObj({
       ...baseStyle
     })
   );
   addVertex(
-    "images/ellipse.gif",
-    40,
-    40,
+    "images/organizacion.gif",
+    200,
+    100,
     getStyleStringByObj({
-      ...baseStyle,
-      [mxConstants.STYLE_SHAPE]: "ellipse"
+      ...baseStyle
+    })
+  );
+  addVertex(
+    "images/rol.gif",
+    200,
+    100,
+    getStyleStringByObj({
+      ...baseStyle
+    })
+  );
+  addVertex(
+    "images/estrategia.gif",
+    200,
+    100,
+    getStyleStringByObj({
+      ...baseStyle
+    })
+  );
+  addVertex(
+    "images/objetivo.gif",
+    200,
+    100,
+    getStyleStringByObj({
+      ...baseStyle
+    })
+  );
+  addVertex(
+    "images/meta.gif",
+    200,
+    100,
+    getStyleStringByObj({
+      ...baseStyle
+    })
+  );
+  addVertex(
+    "images/tactica.gif",
+    200,
+    100,
+    getStyleStringByObj({
+      ...baseStyle
     })
   );
   // console.log(mxText.getTextCss());

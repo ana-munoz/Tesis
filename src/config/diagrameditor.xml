@@ -31,6 +31,13 @@
 				</mxCell>
 			</Container>
 		</add>
+		<add as="actorCustom">
+			<Shape label="Shape" href="">
+				<mxCell vertex="1" style="ellipse">		
+					<mxGeometry as="geometry" width="60" height="60"/>
+				</mxCell>
+			</Shape>
+		</add>
 		<add as="rectangle">
 			<Rect label="Rectangle" href="">
 				<mxCell vertex="1">	
@@ -121,6 +128,12 @@
 			}
 		]]></add>
 		<mxStylesheet as="stylesheet">
+			<add as="test">
+				<add as="shape" value="ellipse"/>
+				<add as="perimeter" value="ellipsePerimeter"/>
+				<add as="strokeColor" value="#CDEB8B"/>
+				<add as="fillColor" value="#CDEB8B"/>
+			</add>
 			<add as="text">
 				<add as="shape" value="rectangle"/>
 				<add as="perimeter" value="rectanglePerimeter"/>
@@ -177,7 +190,7 @@
 				<add as="endSize" value="20"/>
 				<remove as="edgeStyle"/>
 			</add>
-			<add as="swimlane">
+			<add as="swimlane"> <!--TOMÉ-->
 				<add as="shape" value="swimlane"/>
 				<add as="shadow" value="0"/>
 				<add as="startSize" value="23"/>
@@ -212,11 +225,11 @@
 			<add as="hexagon">
 				<add as="shape" value="hexagon"/>
 			</add>
-			<add as="actor">
+			<!-- <add as="actor">
 				<add as="shape" value="actor"/>
 				<add as="strokeColor" value="#FFC7C7"/>
 				<add as="fillColor" value="#FFC7C7"/>
-			</add>
+			</add> -->
 			<add as="cloud">
 				<add as="shape" value="cloud"/>
 				<add as="perimeter" value="ellipsePerimeter"/>
@@ -247,6 +260,7 @@
 				<add as="verticalAlign" value="middle"/>
 				<add as="image" value="images/draw/mxlogo.jpg"/>
 			</add>
+
 		</mxStylesheet>
 		<mxGraphModel as="model">
 			<add as="valueForCellChanged"><![CDATA[
@@ -329,5 +343,6 @@
 		<add as="Cloud" template="cloud" style="cloud" icon="images/cloud.gif"/>
 		<add as="Line" template="hline" style="hline" icon="images/hline.gif"/>
 		<add as="Image" template="image" icon="images/image.gif"/>
+		<add as="test" template="test" icon="images/actor.gif"/>
 	</mxDefaultToolbar>
 </mxEditor>

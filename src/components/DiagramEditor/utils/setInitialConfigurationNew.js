@@ -40,18 +40,18 @@ export default function setInitialConfiguration(graph, toolbarRef) {
     try {
       //mxGrapg component
       var doc = mxUtils.createXmlDocument();
-      var node = doc.createElement("Node");
+      var node = doc.createElement("Actor_");
       node.setAttribute("ComponentID", "[P01]");
 
       var vx = graph.insertVertex(
         parent,
         null,
         node,
-        240,
-        40,
-        150,
-        30,
-        "shape=ellipse;fillColor=yellow"
+        240, //x
+        40, //y
+        60, //width
+        60, //height
+        "shape=test;fillColor=yellow"
       );
 
       var v1 = graph.insertVertex(
