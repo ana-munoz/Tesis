@@ -73,13 +73,7 @@
 				</mxCell>
 			</Shape>
 		</add>
-		<add as="actor">
-			<Shape label="Shape" href="">
-				<mxCell vertex="1" style="actor">		
-					<mxGeometry as="geometry" width="40" height="60"/>
-				</mxCell>
-			</Shape>
-		</add>
+		
 		<add as="cloud">
 			<Shape label="Shape" href="">
 				<mxCell vertex="1" style="cloud">		
@@ -93,6 +87,14 @@
 					<mxGeometry as="geometry" width="60" height="10"/>
 				</mxCell>
 			</Shape>
+		</add>
+		<!--shape:objetivo-->
+		<add as="process">
+			shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;arcSize=45;
+		</add>
+		<!--shape:strategy-->
+		<add as="strat">
+			shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;
 		</add>
 	</Array>
 	<mxGraph as="graph" alternateEdgeStyle="verticalConnector" allowLoops="1" dropEnabled="1">
@@ -128,12 +130,7 @@
 			}
 		]]></add>
 		<mxStylesheet as="stylesheet">
-			<add as="test">
-				<add as="shape" value="ellipse"/>
-				<add as="perimeter" value="ellipsePerimeter"/>
-				<add as="strokeColor" value="#CDEB8B"/>
-				<add as="fillColor" value="#CDEB8B"/>
-			</add>
+			
 			<add as="text">
 				<add as="shape" value="rectangle"/>
 				<add as="perimeter" value="rectanglePerimeter"/>
@@ -145,7 +142,7 @@
 				<add as="fillColor" value="none"/>
 				<add as="gradientColor" value="none"/>
 			</add>
-			<add as="defaultVertex" extend="text">
+			<!-- <add as="defaultVertex" extend="text">
 				<add as="shape" value="rectangle"/>
 				<add as="fontSize" value="11"/>
 				<add as="align" value="center"/>
@@ -154,7 +151,7 @@
 				<add as="strokeColor" value="#C3D9FF"/>
 				<add as="fillColor" value="#C3D9FF"/>
 				<add as="gradientColor" value="white"/>
-			</add>
+			</add> -->
 			<add as="group">
 				<add as="shape" value="rectangle"/>
 				<add as="perimeter" value="rectanglePerimeter"/>
@@ -176,14 +173,14 @@
 				<add as="edgeStyle" value="elbowEdgeStyle"/>
 				<add as="endArrow" value="classic"/>
 			</add>
-			<add as="verticalConnector">
+			<!-- <add as="verticalConnector">
 				<add as="elbow" value="vertical"/>
 			</add>
 			<add as="straightConnector">
 				<add as="shape" value="connector"/>
 				<add as="endArrow" value="classic"/>
 				<add as="edgeStyle">null</add>
-			</add>
+			</add> -->
 			<add as="arrowConnector">
 				<add as="shape" value="arrow"/>
 				<add as="fillColor" value="#C3D9FF"/>
@@ -199,18 +196,18 @@
 				<add as="strokeColor" value="#EEEEEE"/>
 				<add as="fillColor" value="#D4D4D4"/>
 			</add>
-			<add as="rounded">
+			<!-- <add as="rounded">
 				<add as="rounded" value="1"/>
-			</add>
+			</add> -->
 			<add as="ellipse">
 				<add as="shape" value="ellipse"/>
 				<add as="perimeter" value="ellipsePerimeter"/>
 				<add as="strokeColor" value="#CDEB8B"/>
 				<add as="fillColor" value="#CDEB8B"/>
 			</add>
-			<add as="doubleEllipse" extend="ellipse">
+			<!-- <add as="doubleEllipse" extend="ellipse">
 				<add as="shape" value="doubleEllipse"/>
-			</add>
+			</add> -->
 			<add as="rhombus">
 				<add as="shape" value="rhombus"/>
 				<add as="perimeter" value="rhombusPerimeter"/>
@@ -225,12 +222,8 @@
 			<add as="hexagon">
 				<add as="shape" value="hexagon"/>
 			</add>
-			<!-- <add as="actor">
-				<add as="shape" value="actor"/>
-				<add as="strokeColor" value="#FFC7C7"/>
-				<add as="fillColor" value="#FFC7C7"/>
-			</add> -->
-			<add as="cloud">
+
+			<!-- <add as="cloud">
 				<add as="shape" value="cloud"/>
 				<add as="perimeter" value="ellipsePerimeter"/>
 				<add as="strokeColor" value="#CDEB8B"/>
@@ -241,8 +234,8 @@
 				<add as="spacingTop" value="10"/>
 				<add as="strokeColor" value="#4096EE"/>
 				<add as="fillColor" value="#4096EE"/>
-			</add>
-			<add as="hline">
+			</add> -->
+			<!-- <add as="hline">
 				<add as="shape" value="line"/>
 				<add as="strokeWidth" value="3"/>
 				<add as="perimeter" value="rectanglePerimeter"/>
@@ -259,7 +252,7 @@
 				<add as="align" value="center"/>
 				<add as="verticalAlign" value="middle"/>
 				<add as="image" value="images/draw/mxlogo.jpg"/>
-			</add>
+			</add> -->
 
 		</mxStylesheet>
 		<mxGraphModel as="model">

@@ -51,31 +51,21 @@ export default function setInitialConfiguration(graph, toolbarRef) {
         40, //y
         60, //width
         60, //height
-        "shape=test;fillColor=yellow"
+        "shape=ellipse;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;arcSize=45;"
       );
 
       var v1 = graph.insertVertex(
         parent,
         null,
-        "shape1",
+        "objetivo",
         20,
         120,
         80,
         30,
-        "rounded=1;strokeColor=red;fillColor=orange"
+        "shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;arcSize=45;"
       );
-      var v2 = graph.insertVertex(parent, null, "shape2", 300, 120, 80, 30);
-      var v3 = graph.insertVertex(parent, null, "shape3", 620, 180, 80, 30);
-      var e1 = graph.insertEdge(
-        parent,
-        null,
-        "",
-        v1,
-        v2,
-        "strokeWidth=2;endArrow=block;endSize=2;endFill=1;strokeColor=blue;rounded=1;"
-      );
-      var e2 = graph.insertEdge(parent, null, "Edge 2", v2, v3);
-      var e3 = graph.insertEdge(parent, null, "Edge 3", v1, v3);
+      
+      
 
       //data
     } finally {

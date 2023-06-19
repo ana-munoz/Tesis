@@ -39,7 +39,7 @@ export default function initToolbar(graph, tbContainer) {
   var keyHandler = new mxKeyHandler(graph);
   var rubberband = new mxRubberband(graph);
 
-  var addVertex = function(icon, w, h, style, value = null) {
+/*   var addVertex = function(icon, w, h, style, value = null) {
     var vertex = new mxCell(null, new mxGeometry(0, 0, w, h), style);
     if (value) {
       vertex.value = value;
@@ -54,72 +54,25 @@ export default function initToolbar(graph, tbContainer) {
       mxUtils.setOpacity(img, tmp ? 100 : 20);
       img.enabled = tmp;
     });
-  };
+  }; */
 
-  var baseStyle = { ...graph.getStylesheet().getDefaultVertexStyle() };
+  var addVertex = function(icon, w, h, style)
+				{
+					var vertex = new mxCell(null, new mxGeometry(0, 0, w, h), style);
+					vertex.setVertex(true);
+				
+					addToolbarItem(graph, toolbar, vertex, icon);
+				};
+				
+				addVertex('images/actor.gif', 80, 80, 'shape=ellipse;startSize=20;');
+				addVertex('images/organizacion.gif', 100, 40, '');
+				addVertex('images/rol.gif', 100, 40, 'shape=rounded');
+				addVertex('images/estrategia.gif', 150, 40, 'shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;');
+				addVertex('images/objetivo.gif', 150, 40, 'shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;arcSize=45;');
+				addVertex('images/meta.gif', 150, 40, 'shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;arcSize=45;');
+				addVertex('images/tactica.gif', 150, 40, 'shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;');
+				
+				toolbar.addLine();
 
-  addVertex(
-    "images/actor.gif",
-    100,
-    100,
-    getStyleStringByObj({
-      ...baseStyle
-    })
-  );
-  addVertex(
-    "images/organizacion.gif",
-    200,
-    100,
-    getStyleStringByObj({
-      ...baseStyle
-    })
-  );
-  addVertex(
-    "images/rol.gif",
-    200,
-    100,
-    getStyleStringByObj({
-      ...baseStyle
-    })
-  );
-  addVertex(
-    "images/estrategia.gif",
-    200,
-    100,
-    getStyleStringByObj({
-      ...baseStyle
-    })
-  );
-  addVertex(
-    "images/objetivo.gif",
-    200,
-    100,
-    getStyleStringByObj({
-      ...baseStyle
-    })
-  );
-  addVertex(
-    "images/meta.gif",
-    200,
-    100,
-    getStyleStringByObj({
-      ...baseStyle
-    })
-  );
-  addVertex(
-    "images/tactica.gif",
-    200,
-    100,
-    getStyleStringByObj({
-      ...baseStyle
-    })
-  );
-  // console.log(mxText.getTextCss());
-  addVertex(
-    "images/text.gif",
-    0,
-    0,
-    "text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];",
-    "Text"
-  );
+
 }
