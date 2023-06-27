@@ -10,6 +10,8 @@ import {
   setInitialConfiguration,
   configureKeyBindings
 } from "./utils";
+import IconButtons from "../reactComps/IconButtons";
+import Zooms from "../reactComps/Zooms";
 
 const {
   mxGraph,
@@ -276,10 +278,11 @@ export default function App(props) {
       <div className="mxgraph-toolbar-container">
         <div className="mxgraph-toolbar-container" ref={toolbarRef} />
         <div>
-          {renderMoveBackAndFrontButtons()}
+          <IconButtons/>
+          {/* {renderMoveBackAndFrontButtons()}
           {renderColorChange("fillColor", "Change fill color")}
           {renderColorChange("fontColor", "Change font color")}
-          {renderColorChange("strokeColor", "Change border color")}
+          {renderColorChange("strokeColor", "Change border color")} */}
         </div>
         {renderColorPicker()}
       </div>

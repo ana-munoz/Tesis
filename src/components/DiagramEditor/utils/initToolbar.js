@@ -1,6 +1,5 @@
 import { default as MxGraph } from "mxgraph";
 import { addToolbarItem, getStyleStringByObj } from "./";
-
 const {
   mxEvent,
   mxRubberband,
@@ -73,6 +72,6 @@ export default function initToolbar(graph, tbContainer) {
 				addVertex('images/tactica.gif', 150, 40, 'shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;');
 				
 				toolbar.addLine();
-
-
+        
+        
 }
