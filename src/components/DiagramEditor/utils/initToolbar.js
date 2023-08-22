@@ -1,5 +1,7 @@
+// aquí están definidas las shapes; evaluar(*)s
 import { default as MxGraph } from "mxgraph";
 import { addToolbarItem, getStyleStringByObj } from "./";
+import customShapes from "./customShapes";
 const {
   mxEvent,
   mxRubberband,
@@ -64,6 +66,7 @@ export default function initToolbar(graph, tbContainer) {
 				};
 				
 				addVertex('images/actor.gif', 80, 80, 'shape=ellipse;startSize=20;');
+        //addVertex('images/actor.gif', 80, 80, 'shape=actorShape');
 				addVertex('images/organizacion.gif', 100, 40, '');
 				addVertex('images/rol.gif', 100, 40, 'shape=rounded');
 				addVertex('images/estrategia.gif', 150, 40, 'shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;');
